@@ -10,7 +10,7 @@
         <vm:HomePageViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="setting" Priority="1"/>
+        <ToolbarItem Icon="settings" Priority="1" Command="{Binding SettingIconTapped}"/>
     </ContentPage.ToolbarItems>
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">

@@ -7,7 +7,7 @@
         <Grid>
             <Grid BackgroundColor="#DEDEDE" IsVisible="{Binding IsListViewVisible}">
                 <Syncfusion:SfListView Margin="0" ItemsSource="{Binding RealEstateList}"
-                         Padding="0,5,0,5"
+                         Padding="0,5,0,5" SelectedItem="{Binding SelectedRealEstate}"
                          SelectionMode="None"
                          BackgroundColor="#F0F0F0"
                          ItemSpacing="0,0,0,5">
@@ -59,7 +59,7 @@
 
             <Grid BackgroundColor="#DEDEDE" IsVisible="{Binding IsGridViewVisible}">
                 <Syncfusion:SfListView Margin="0" ItemsSource="{Binding RealEstateList}"
-                         Padding="0,5,0,5"
+                         Padding="0,5,0,5" SelectedItem="{Binding SelectedRealEstate}"
                          SelectionMode="None"
                          BackgroundColor="#F0F0F0"
                          ItemSpacing="5">
@@ -115,7 +115,7 @@
 
             <Grid BackgroundColor="#DEDEDE" IsVisible="{Binding IsThumbnailViewVisible}">
                 <Syncfusion:SfListView Margin="0" ItemsSource="{Binding RealEstateList}"
-                         Padding="0,5,0,5"
+                         Padding="0,5,0,5" SelectedItem="{Binding SelectedRealEstate}"
                          SelectionMode="None"
                          BackgroundColor="#F0F0F0"
                                    ItemSpacing="0,5,0,5">

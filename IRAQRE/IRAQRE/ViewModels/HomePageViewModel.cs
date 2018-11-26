@@ -90,6 +90,8 @@ namespace IRAQRE.ViewModels
         public ICommand SettingIconTapped { get; set; }
         public ICommand SortingCommand { get; set; }
         public ICommand MapShowCommand { get; set; }
+        public ICommand CallClicked { get; set; }
+        public ICommand EmailClicked { get; set; }
         #endregion
 
         #region Command Private Method
@@ -148,6 +150,16 @@ namespace IRAQRE.ViewModels
         {
 
         }
+
+        private void Email_Clicked(object obj)
+        {
+
+        }
+
+        private void Call_Clicked(object obj)
+        {
+
+        }
         #endregion
 
         #region Construtor
@@ -160,6 +172,8 @@ namespace IRAQRE.ViewModels
             SettingIconTapped = new Command(SettingIcon_Tapped);
             SortingCommand = new Command(Sorting_Command);
             MapShowCommand = new Command(MapShow_Command);
+            CallClicked = new Command(Call_Clicked);
+            EmailClicked = new Command(Email_Clicked);
 
             RealEstateList.Add(new HomePageModel
             {
@@ -245,6 +259,7 @@ namespace IRAQRE.ViewModels
             IsThumbnailViewVisible = false;
             IsFloatingActionVisible = true;
         }
+      
         #endregion
 
         #region Notify Property Change Method

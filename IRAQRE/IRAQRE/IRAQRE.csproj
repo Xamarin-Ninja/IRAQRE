@@ -18,7 +18,6 @@
     <None Remove="SVGImages\icons-06.svg" />
     <None Remove="SVGImages\icons-07.svg" />
     <None Remove="SVGImages\icons-08.svg" />
-    <None Remove="SVGImages\logo.svg" />
     <None Remove="SVGImages\messages.svg" />
     <None Remove="SVGImages\search.svg" />
     <None Remove="SVGImages\userprofile.svg" />
@@ -34,7 +33,6 @@
     <EmbeddedResource Include="SVGImages\icons-06.svg" />
     <EmbeddedResource Include="SVGImages\icons-07.svg" />
     <EmbeddedResource Include="SVGImages\icons-08.svg" />
-    <EmbeddedResource Include="SVGImages\logo.svg" />
     <EmbeddedResource Include="SVGImages\messages.svg" />
     <EmbeddedResource Include="SVGImages\search.svg" />
     <EmbeddedResource Include="SVGImages\userprofile.svg" />

@@ -14,6 +14,7 @@ namespace IRAQRE.ViewModels
     {
         #region Private Variables
         private ObservableCollection<HomePageModel> _realEstateList = new ObservableCollection<HomePageModel>();
+        public HomePageModel _selectedRealEstate = new HomePageModel();
 
         private bool _isListViewVisible;
         private bool _isGridViewVisible;
@@ -30,6 +31,12 @@ namespace IRAQRE.ViewModels
         {
             get { return _realEstateList; }
             set { _realEstateList = value; OnPropertyChanged("RealEstateList"); }
+        }
+
+        public HomePageModel SelectedRealEstate
+        {
+            get { return _selectedRealEstate; }
+            set { _selectedRealEstate = value; OnPropertyChanged("SelectedRealEstate");}
         }
 
         public bool IsListViewVisible
@@ -80,6 +87,9 @@ namespace IRAQRE.ViewModels
         public ICommand ThumbnailViewDisplayCommand { get; set; }
         public ICommand GridViewDisplayCommand { get; set; }
         public ICommand FilterCommand { get; set; }
+        public ICommand SettingIconTapped { get; set; }
+        public ICommand SortingCommand { get; set; }
+        public ICommand MapShowCommand { get; set; }
         #endregion
 
         #region Command Private Method
@@ -123,6 +133,21 @@ namespace IRAQRE.ViewModels
         {
 
         }
+
+        private void SettingIcon_Tapped(object obj)
+        {
+
+        }
+
+        private void MapShow_Command(object obj)
+        {
+
+        }
+
+        private void Sorting_Command(object obj)
+        {
+
+        }
         #endregion
 
         #region Construtor
@@ -132,6 +157,10 @@ namespace IRAQRE.ViewModels
             ThumbnailViewDisplayCommand = new Command(ThumbnailViewDisplay_Command);
             GridViewDisplayCommand = new Command(GridViewDisplay_Command);
             FilterCommand = new Command(Filter_Command);
+            SettingIconTapped = new Command(SettingIcon_Tapped);
+            SortingCommand = new Command(Sorting_Command);
+            MapShowCommand = new Command(MapShow_Command);
+
             RealEstateList.Add(new HomePageModel
             {
                 Image = "villa1.png",
@@ -216,7 +245,6 @@ namespace IRAQRE.ViewModels
             IsThumbnailViewVisible = false;
             IsFloatingActionVisible = true;
         }
-
         #endregion
 
         #region Notify Property Change Method

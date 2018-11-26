@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:IRAQRE.ViewModels"
              x:Class="IRAQRE.Views.MasterPage.MasterMenuPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.BindingContext>
+        <vm:MasterPageViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content Title="Main Menu">
         <StackLayout Spacing="0" BackgroundColor="#BD0014">
             <Grid RowSpacing="5">
@@ -24,8 +28,8 @@
                 <Image Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Source="user_icon" />
                 <Label Text="Please Login" TextColor="White" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center">
-                    <Button BackgroundColor="White" Text="Login" Padding="0" TextColor="#BD0014" FontSize="10" WidthRequest="70" HeightRequest="30" CornerRadius="3" VerticalOptions="Center"/>
-                    <Button BackgroundColor="Transparent" Text="Sign up" Padding="0" TextColor="White" FontSize="10" WidthRequest="70" HeightRequest="30" CornerRadius="3" BorderColor="White" BorderWidth="0.5" VerticalOptions="Center"/>
+                    <Button BackgroundColor="White" Text="Login" Padding="0" TextColor="#BD0014" FontSize="10" WidthRequest="70" HeightRequest="30" CornerRadius="3" VerticalOptions="Center" Command="{Binding LoginTapped}"/>
+                    <Button BackgroundColor="Transparent" Text="Sign up" Padding="0" TextColor="White" FontSize="10" WidthRequest="70" HeightRequest="30" CornerRadius="3" BorderColor="White" BorderWidth="0.5" VerticalOptions="Center" Command="{Binding SignupTapped}"/>
                 </StackLayout>
             </Grid>
             <!--MENU LIST-->
@@ -42,7 +46,7 @@
                     </Grid.RowDefinitions>
                     <Label Text="Home" Margin="15,0,0,0" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center" VerticalTextAlignment="Center" TextColor="White">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding HomePageTappped}"/>
+                            <TapGestureRecognizer Command="{Binding HomePageTapped}"/>
                         </Label.GestureRecognizers>
                     </Label>
 

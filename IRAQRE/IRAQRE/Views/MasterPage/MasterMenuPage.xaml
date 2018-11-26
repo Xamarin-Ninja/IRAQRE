@@ -27,7 +27,7 @@
                     <Label Text="Future Homes" TextColor="White" FontSize="11" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start"/>
                 </Grid>
                 <!--<Image Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Source="user_icon" />-->
-                <ffimageloadingsvg:SvgCachedImage HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Source="resource://IRAQRE.SVGImages.userprofile1.svg"/>
+                <ffimageloadingsvg:SvgCachedImage HorizontalOptions="Center" VerticalOptions="Fill" Grid.Row="1" Source="resource://IRAQRE.SVGImages.userprofile1.svg"/>
                 <Label Text="Please Login" TextColor="White" Grid.Row="2" FontSize="10"  HorizontalOptions="Center" VerticalOptions="Center"/>
                 <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center">
                     <Button BackgroundColor="White" Text="Login" Padding="0" TextColor="#BD0014" FontSize="10" WidthRequest="70" HeightRequest="30" CornerRadius="3" VerticalOptions="Center" Command="{Binding LoginTapped}"/>

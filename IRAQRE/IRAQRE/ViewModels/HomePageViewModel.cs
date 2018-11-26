@@ -21,9 +21,9 @@ namespace IRAQRE.ViewModels
         private bool _isThumbnailViewVisible;
         private bool _isFloatingActionVisible;
 
-        private string _listviewIcon = "listview_icon_active.png";
-        private string _thumbnailviewIcon = "thumbnailview_icon.png";
-        private string _gridviewIcon = "gridview_icon.png";
+        private string _listviewIcon = "icon_2_active.png";
+        private string _thumbnailviewIcon = "icon_3.png";
+        private string _gridviewIcon = "icon_1.png";
         #endregion
 
         #region Public Variables
@@ -100,9 +100,9 @@ namespace IRAQRE.ViewModels
             IsThumbnailViewVisible = false;
             IsFloatingActionVisible = true;
 
-            GridviewIcon = "gridview_icon.png";
-            ListviewIcon = "listview_icon_active.png";
-            ThumbnailviewIcon = "thumbnailview_icon.png";
+            GridviewIcon = "icon_1.png";
+            ListviewIcon = "icon_2_active.png";
+            ThumbnailviewIcon = "icon_3.png";
         }
 
         private void ThumbnailViewDisplay_Command(object obj)
@@ -112,9 +112,9 @@ namespace IRAQRE.ViewModels
             IsThumbnailViewVisible = true;
             IsFloatingActionVisible = false;
 
-            GridviewIcon = "gridview_icon.png";
-            ListviewIcon = "listview_icon.png";
-            ThumbnailviewIcon = "thumbnailview_icon_active.png";
+            GridviewIcon = "icon_1.png";
+            ListviewIcon = "icon_2.png";
+            ThumbnailviewIcon = "icon_3_active.png";
         }
 
         private void GridViewDisplay_Command(object obj)
@@ -124,9 +124,9 @@ namespace IRAQRE.ViewModels
             IsThumbnailViewVisible = false;
             IsFloatingActionVisible = true;
 
-            GridviewIcon = "gridview_icon_active.png";
-            ListviewIcon = "listview_icon.png";
-            ThumbnailviewIcon = "thumbnailview_icon.png";
+            GridviewIcon = "icon_1_active.png";
+            ListviewIcon = "icon_2.png";
+            ThumbnailviewIcon = "icon_3.png";
         }
 
         private void Filter_Command(object obj)

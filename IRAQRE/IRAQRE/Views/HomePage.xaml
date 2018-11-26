@@ -60,7 +60,7 @@
                 <ImageButton BackgroundColor="Transparent" Source="filter" Grid.Column="4" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding FilterCommand}"/>
                 <Image Source="flag.png" Grid.Column="5" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center" VerticalOptions="Center" >
                 </Image>
-                <Label Text="العَرَبِيَّة" Grid.Column="6" HorizontalOptions="Fill" FontSize="14" VerticalOptions="Center"/>
+                <Label Text="العَرَبِيَّة" Grid.Column="6" HorizontalOptions="Start" TextColor="Black" FontSize="14" VerticalOptions="Center"/>
             </Grid>
             <tabview:SfTabView EnableSwiping="True" Grid.Row="1" x:Name="searchTab" VisibleHeaderCount="3"
                                           BackgroundColor="White"

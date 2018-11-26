@@ -168,7 +168,7 @@
                                         </StackLayout>
                                         <StackLayout Grid.Row="0" Grid.RowSpan="3" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
                                             <!--<Image Source="call_icon" HorizontalOptions="Center" VerticalOptions="Center"/>-->
-                                            <ffimageloadingsvg:SvgCachedImage WidthRequest="30" HeightRequest="30" Source="resource://IRAQRE.SVGImages.calling.svg" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <ffimageloadingsvg:SvgCachedImage WidthRequest="35" HeightRequest="35" Source="resource://IRAQRE.SVGImages.calling.svg" HorizontalOptions="Center" VerticalOptions="Center"/>
                                             <Label Text="Call" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Maroon"/>
                                             <StackLayout.GestureRecognizers>
                                                 <TapGestureRecognizer Command="{Binding CallClicked}"/>
@@ -176,7 +176,7 @@
                                         </StackLayout>
                                         <StackLayout Grid.Row="0" Grid.RowSpan="3" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
                                             <!--<Image Source="email_icon" HorizontalOptions="Center" VerticalOptions="Center"/>-->
-                                            <ffimageloadingsvg:SvgCachedImage WidthRequest="30" HeightRequest="30" Source="resource://IRAQRE.SVGImages.messages.svg" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                            <ffimageloadingsvg:SvgCachedImage WidthRequest="35" HeightRequest="35" Source="resource://IRAQRE.SVGImages.messages.svg" HorizontalOptions="Center" VerticalOptions="Center"/>
                                             <Label Text="Email" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Maroon"/>
                                             <StackLayout.GestureRecognizers>
                                                 <TapGestureRecognizer Command="{Binding EmailClicked}"/>

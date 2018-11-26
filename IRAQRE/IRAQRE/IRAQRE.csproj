@@ -74,6 +74,9 @@
     <None Update="Views\HomePage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="Views\HomeSearchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="Views\MasterPage\MasterMenuPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>

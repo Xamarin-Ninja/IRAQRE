@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using FFImageLoading.Forms.Platform;
+using FFImageLoading.Svg.Forms;
 
 namespace IRAQRE.Droid
 {
@@ -19,6 +21,8 @@ namespace IRAQRE.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            CachedImageRenderer.Init(true);
+            var ignore = typeof(SvgCachedImage);
             LoadApplication(new App());
         }
     }

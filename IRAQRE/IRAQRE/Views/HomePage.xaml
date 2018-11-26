@@ -10,7 +10,7 @@
         <vm:HomePageViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Icon="settings" Priority="1" Command="{Binding SettingIconTapped}"/>
+        <ToolbarItem Icon="setting" Priority="1" Command="{Binding SettingIconTapped}"/>
     </ContentPage.ToolbarItems>
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
@@ -38,7 +38,8 @@
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
                 <Label Text="Baghdad, Iraq" Grid.Column="0" TextColor="Black" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Image  Source="{Binding ListviewIcon}" Grid.Column="1" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" VerticalOptions="Center">
@@ -57,7 +58,9 @@
                     </Image.GestureRecognizers>
                 </Image>
                 <ImageButton BackgroundColor="Transparent" Source="filter" Grid.Column="4" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding FilterCommand}"/>
-                <Label Text="Baghdad, Iraq" Grid.Column="5" TextColor="Black" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Image Source="flag.png" Grid.Column="5" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center" VerticalOptions="Center" >
+                </Image>
+                <Picker x:Name="LanguagePicker" Grid.Column="6" HorizontalOptions="Fill" FontSize="14" VerticalOptions="Center" ItemsSource="languagePickerItems" ItemDisplayBinding="{Binding LanguageName}"/>
             </Grid>
             <tabview:SfTabView EnableSwiping="True" Grid.Row="1" x:Name="searchTab" VisibleHeaderCount="3"
                                           BackgroundColor="White"

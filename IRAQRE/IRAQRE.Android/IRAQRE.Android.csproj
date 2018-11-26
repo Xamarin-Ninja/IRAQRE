@@ -96,7 +96,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\flag.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IRAQRE\IRAQRE.csproj">
       <Project>{2D686C50-5616-4012-9461-35FC322AFF50}</Project>

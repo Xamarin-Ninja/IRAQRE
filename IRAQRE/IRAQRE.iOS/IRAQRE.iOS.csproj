@@ -217,4 +217,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\setting%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\flag.png" />
+  </ItemGroup>
 </Project>

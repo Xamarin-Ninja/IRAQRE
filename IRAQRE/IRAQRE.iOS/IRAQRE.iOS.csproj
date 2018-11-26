@@ -223,4 +223,37 @@
   <ItemGroup>
     <BundleResource Include="Resources\flag.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sorting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villa8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villa4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villa5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villa6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\villa7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\re_logo.png" />
+  </ItemGroup>
 </Project>
